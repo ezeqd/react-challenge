@@ -27,7 +27,7 @@ const list = [
 
 const Playlist = list.map( (playlist) =>
     <li className="playlist" key={playlist.toString()}>
-        <a href={playlist.url}>
+        <a href={playlist.url} >
             <img src={playlist.image} className="playlist-img" alt="playlist" />
         </a>
         
@@ -41,7 +41,7 @@ export const Playlists = () => {
             <ul>
                 {Playlist}
             </ul>
-            <a className="more-playlist" href="#">Ver más</a>
+            <button className="more-playlist" type="button" href="#">Ver más</button>
         </div>
     );
 }
