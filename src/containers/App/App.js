@@ -1,11 +1,21 @@
 import React from 'react';
 import './App.css';
-import contest from '../../components/contests/contests';
+import { Contests } from '../../components/contests/contests';
+import { Suggestions } from '../../components/suggestions/suggestions';
+import { Playlists } from '../../components/playlists/playlists';
+import { Characters } from '../../components/characters/characters';
+import { LastNews } from '../../components/last-news/last-news';
 
 function App() {
   return (
-    <div className="App">
-      <contest></contest>
+    <div className="container">
+      <div className="first-section">
+        <Contests />
+        <Suggestions />
+      </div>
+      <Playlists />
+      <Characters />
+      <LastNews />
     </div>
   );
 }

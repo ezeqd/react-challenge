@@ -1,60 +1,39 @@
-.contests {
-    width: 30%;
+.suggestions {
+    width: 70%;
 }
-.contests .title {
+.suggestions .title {
     margin: 0;
     padding-left: 10px;
     font-weight: 800;
 }
-.contests ul {
+.suggestions ul {
     margin: 0 auto;
     padding: 0;
     list-style-type: none;
     display: flex;
-    flex-flow: column;
     justify-content: space-between;
 }
-.contests li {
+.suggestions li {
     margin: 10px 10px;
-    display: flex;
 }
-.contests .col-1 {
-    width: 40%;
-    display: flex;
-}
-.contests .col-2 {
-    width: 60%;
-    display: flex;
-    flex-flow: column;
-}
-.contest .contest-submit {
-    width: 60%;
-    align-self: center;
-}
-.contests .col-1 img {
+.suggestions li img {
     width: 100%;
 }
-.contest p {
-    padding-left: 10px;
-}
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
-    .contests{
+    .suggestions{
         width: 100%;
     }
-    .contests .title {
+    .suggestions .title {
         margin: 0;
         display: flex;
         justify-content: center;
     }
-    .contest .contest-submit {
-        width: 50%;
-    }
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 767px){
-    .contests{
+    .suggestions{
         width: 100%;
     }
-    .contests .title {
+    .suggestions .title {
         margin: 0;
         display: flex;
         justify-content: center;

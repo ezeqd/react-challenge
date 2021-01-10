@@ -1,0 +1,57 @@
+.characters {
+    width: 100%;
+}
+.characters .title{
+    font-weight: 800;
+}
+.characters ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.characters li {
+    margin: 0 10px;
+}
+.character .col-2 {
+    width: 100%;
+    display: flex;
+}
+.characters ul img {
+    max-width: 40%;
+    margin: 10px 10px 10px 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+.character-name {
+    width: 100%;
+    margin: 10px 0;
+    padding-left: 5px;
+}
+.description {
+    margin: 10px 0 0 10px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    .characters .title{
+        display: flex;
+        justify-content: center;
+    }
+    .characters ul {
+        flex-flow: column;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px){
+    .characters .title{
+        display: flex;
+        justify-content: center;
+    }
+    .characters ul {
+        flex-flow: column;
+    }
+}
